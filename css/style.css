@@ -30,6 +30,7 @@
 html,
 body {
   font-family: 'Manrope', sans-serif;
+  background-color: #050505;
   background:
     radial-gradient(circle at var(--bg-x1) var(--bg-y1), rgba(245, 245, 245, 0.055), transparent 18%),
     radial-gradient(circle at var(--bg-x2) var(--bg-y2), rgba(235, 235, 235, 0.035), transparent 26%),
@@ -37,6 +38,7 @@ body {
     linear-gradient(180deg, #0b0b0c 0%, #050505 100%);
   color: var(--text);
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   overflow-x: hidden;
   overflow-y: auto;
   letter-spacing: -0.01em;
