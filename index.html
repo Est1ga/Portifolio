@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Mockup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="py-2 nav-blur">
+    <div class="container d-flex flex-wrap align-items-center justify-content-end">
+      <button class="hamburger d-lg-none" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="d-flex gap-4 small text-uppercase fw-semibold" id="mainNav">
+        <a class="nav-link text-decoration-none text-light px-0" href="#projetos">Projetos</a>
+        <a class="nav-link text-decoration-none text-light px-0" href="#skills">Stack</a>
+        <a class="nav-link text-decoration-none text-light px-0" href="#sobre">Sobre</a>
+        <a class="nav-link text-decoration-none text-light px-0" href="#trajetoria">Trajetória</a>
+        <a class="nav-link text-decoration-none text-light px-0" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-shell">
+  <main>
+    <section class="snap-section">
+      <section class="hero">
+      <div class="container hero-content">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold mb-3 reveal delay-1">Da ideia ao digital, acenda o futuro que você imagina.</h2>
+            <p class="text-muted mb-4 reveal delay-2">Experiente em PHP, Python, IA, JavaScript,jQuery, HTML, CSS, Bootstrap.</p>
+            <div class="d-flex flex-wrap gap-2 mb-4 reveal delay-3">
+              <span class="tag">Disponível para novos projetos</span>
+              <span class="tag">São Paulo / Remoto</span>
+            </div>
+            <div class="d-flex flex-wrap gap-3 reveal delay-4">
+              <a href="#contato" class="btn btn-lg fw-bold px-4 btn-contrast">Fale comigo</a>
+            </div>
+          </div>
+          <div class="col-lg-5 ms-auto">
+            <div class="panel p-4 reveal">
+              <div class="text-uppercase text-muted small mb-2">Leonardo Estigarribia</div>
+              <div class="ratio ratio-4x3 rounded-4 overflow-hidden mb-3 profile-frame" style="background: linear-gradient(135deg, #1b1d26, #0a0b10); border: 1px solid var(--line);">
+                <img src="images/leonardo.jpeg" alt="Foto de Leonardo Estigarribia" class="profile-photo">
+              </div>
+              <div class="d-flex gap-3">
+                <div class="flex-fill">
+                  <div class="text-muted small mb-1">Cargo</div>
+                  <div class="fw-semibold">DEV full-stack</div>
+                </div>
+                <div class="flex-fill">
+                  <div class="text-muted small mb-1">Experiência</div>
+                  <div class="fw-semibold">4 anos</div>
+                </div>
+                <div class="flex-fill">
+                  <div class="text-muted small mb-1">Base</div>
+                  <div class="fw-semibold">São Paulo / Brasil</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section id="projetos" class="py-5">
+      <div class="container">
+        <div class="section-title reveal"><span></span> Projetos em destaque</div>
+        <div id="projetosCarousel" class="carousel slide carousel-fade project-carousel reveal" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Projeto 1"></button>
+            <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="1" aria-label="Projeto 2"></button>
+            <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="2" aria-label="Projeto 3"></button>
+            <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="3" aria-label="Projeto 4"></button>
+            <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="4" aria-label="Projeto 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="project-card">
+                <div class="row g-0 align-items-stretch h-100">
+                  <div class="col-lg-6">
+                    <img src="images/projeto-1.svg" class="project-image w-100 h-100" alt="Mockup Projeto 1">
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center">
+                    <div class="p-4 p-lg-5">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Construtor de Fluxos de Atendimento</h5>
+                        <span class="badge badge-accent rounded-pill px-3 py-1">Automação</span>
+                      </div>
+                      <p class="text-muted">Ferramenta visual para montar árvores de atendimento com blocos de arrastar e soltar, gerando bots de triagem inicial para empresas sem precisar programar.</p>
+                      <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">SQL</span>
+                        <a href="#" class="text-decoration-none fw-semibold btn-detail" style="display:inline-flex; align-items:center; line-height:1;">Ver detalhes →</a>
+                      </div>
+                      <div class="d-none project-extra">
+                        <p class="text-muted mb-3">Permite criar fluxos, validar conexões entre blocos e publicar bots de atendimento inicial conectados às APIs da empresa.</p>
+                        <ul class="text-muted mb-3">
+                          <li>Editor drag-and-drop com persistência em SQL.</li>
+                          <li>Geração de bots e roteamento inicial de clientes.</li>
+                          <li>Stack: PHP, JS, Python, HTML/CSS, SQL.</li>
+                        </ul>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="tag">Integração API</span>
+                          <span class="tag">Drag & Drop</span>
+                          <span class="tag">Bots</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="project-card">
+                <div class="row g-0 align-items-stretch h-100">
+                  <div class="col-lg-6">
+                    <img src="images/projeto-2.svg" class="project-image w-100 h-100" alt="Mockup Projeto 2">
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center">
+                    <div class="p-4 p-lg-5">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Bot de Vendas com IA</h5>
+                        <span class="badge badge-accent rounded-pill px-3 py-1">IA + WhatsApp</span>
+                      </div>
+                      <p class="text-muted">Chatbot para WhatsApp que usa IA para atender clientes, qualificar leads de veículos, resumir conversas e encaminhar oportunidades prontas para o time de vendas.</p>
+                      <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <span class="tag">PHP</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">IA</span>
+                        <span class="tag">SQL</span>
+                        <a href="#" class="text-decoration-none fw-semibold btn-detail" style="display:inline-flex; align-items:center; line-height:1;">Ver detalhes →</a>
+                      </div>
+                      <div class="d-none project-extra">
+                        <p class="text-muted mb-3">Automatiza respostas, coleta dados importantes do lead e gera resumos claros para acelerar o fechamento em concessionárias.</p>
+                        <ul class="text-muted mb-3">
+                          <li>Conexão WhatsApp + IA para resumir conversas.</li>
+                          <li>Qualificação automática de leads de carros.</li>
+                          <li>Stack: PHP, Python, JS, HTML/CSS, SQL.</li>
+                        </ul>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="tag">WhatsApp API</span>
+                          <span class="tag">IA Resumo</span>
+                          <span class="tag">Leads</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="project-card">
+                <div class="row g-0 align-items-stretch h-100">
+                  <div class="col-lg-6">
+                    <img src="images/projeto-3.svg" class="project-image w-100 h-100" alt="Mockup Projeto 5">
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center">
+                    <div class="p-4 p-lg-5">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Autoagendamento e Pesquisas de Atendimento</h5>
+                        <span class="badge badge-accent rounded-pill px-3 py-1">Experiência do cliente</span>
+                      </div>
+                      <p class="text-muted">Implementação de jornadas em WhatsApp usando tecnologia de flows, permitindo pesquisas de atendimento, coleta de feedback e autoagendamento sem depender de um atendente.</p>
+                      <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <span class="tag">WhatsApp</span>
+                        <span class="tag">Flows</span>
+                        <span class="tag">Pesquisa</span>
+                        <span class="tag">Autoagendamento</span>
+                        <a href="#" class="text-decoration-none fw-semibold btn-detail" style="display:inline-flex; align-items:center; line-height:1;">Ver detalhes →</a>
+                      </div>
+                      <div class="d-none project-extra">
+                        <p class="text-muted mb-3">Fluxos configurados para medir satisfação, entender motivos de contato e permitir que o próprio cliente escolha horários disponíveis para atendimento.</p>
+                        <ul class="text-muted mb-3">
+                          <li>Pesquisas pós-atendimento diretamente no WhatsApp, com consolidação de respostas.</li>
+                          <li>Autoagendamento guiado por menus e validação de slots livres.</li>
+                          <li>Fluxos parametrizáveis, permitindo ajustar perguntas e regras sem reescrever código.</li>
+                        </ul>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="tag">CX</span>
+                          <span class="tag">Automação</span>
+                          <span class="tag">WhatsApp Business</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="project-card">
+                <div class="row g-0 align-items-stretch h-100">
+                  <div class="col-lg-6">
+                    <img src="images/projeto-3.svg" class="project-image w-100 h-100" alt="Mockup Projeto 4">
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center">
+                    <div class="p-4 p-lg-5">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Robôs de Web Scraping 24/7</h5>
+                        <span class="badge badge-accent rounded-pill px-3 py-1">Web scraping</span>
+                      </div>
+                      <p class="text-muted">Conjunto de 8 robôs em Python que rodam 24/7 em portais oficiais Salesforce de montadoras, capturando e atualizando dados de leads e oportunidades em tempo real.</p>
+                      <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <span class="tag">Python</span>
+                        <span class="tag">Selenium</span>
+                        <span class="tag">Web scraping</span>
+                        <span class="tag">Monitoramento</span>
+                        <a href="#" class="text-decoration-none fw-semibold btn-detail" style="display:inline-flex; align-items:center; line-height:1;">Ver detalhes →</a>
+                      </div>
+                      <div class="d-none project-extra">
+                        <p class="text-muted mb-3">Robôs dedicados a portais Salesforce de MyHonda VW, Grow Fiat, Grow Peugeot Citroën e Chevrolet, com observabilidade e recuperação automática.</p>
+                        <ul class="text-muted mb-3">
+                          <li>Execução contínua 24/7 com monitoramento via terminal e acompanhamento de logs.</li>
+                          <li>Atualização de SLA e status a partir dos dados capturados nos portais oficiais.</li>
+                          <li>Handlers de queda e erros usando Selenium, com tentativas automáticas e alertas.</li>
+                        </ul>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="tag">Salesforce</span>
+                          <span class="tag">Observabilidade</span>
+                          <span class="tag">Robôs 24/7</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="project-card">
+                <div class="row g-0 align-items-stretch h-100">
+                  <div class="col-lg-6">
+                    <img src="images/projeto-3.svg" class="project-image w-100 h-100" alt="Mockup Projeto 3">
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center">
+                    <div class="p-4 p-lg-5">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="mb-0">Agendador de Disparos</h5>
+                        <span class="badge badge-accent rounded-pill px-3 py-1">Automação</span>
+                      </div>
+                      <p class="text-muted">Ferramenta full‑stack para gestão interna, seleção de bases de clientes e agendamento de disparos automáticos de mensagens.</p>
+                      <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <span class="tag">PHP</span>
+                        <span class="tag">JS</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">SQL</span>
+                        <a href="#" class="text-decoration-none fw-semibold btn-detail" style="display:inline-flex; align-items:center; line-height:1;">Ver detalhes →</a>
+                      </div>
+                      <div class="d-none project-extra">
+                        <p class="text-muted mb-3">Centraliza informações, permite escolher bases específicas de clientes e programar disparos automatizados para campanhas e comunicados.</p>
+                        <ul class="text-muted mb-3">
+                          <li>CRUDs, relatórios e dashboards.</li>
+                          <li>Agendamento de disparos em lote para base selecionada.</li>
+                          <li>Stack: PHP, JS, Bootstrap, SQL.</li>
+                        </ul>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="tag">Dashboard</span>
+                          <span class="tag">Automação</span>
+                          <span class="tag">Web</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#projetosCarousel" data-bs-slide="prev" aria-label="Projeto anterior">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#projetosCarousel" data-bs-slide="next" aria-label="Próximo projeto">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="snap-section">
+      <section id="skills" class="py-5">
+        <div class="container">
+          <div class="section-title reveal"><span></span> Competências</div>
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <div class="panel p-4 h-100 reveal delay-1">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <h4 class="mb-0">Stack principal</h4>
+                  <span class="badge-accent rounded-pill px-3 py-1">Core</span>
+                </div>
+                <ul class="list-unstyled text-muted mb-0">
+                  <li>• PHP e Python para back-end e automação</li>
+                  <li>• JavaScript e jQuery para front-end</li>
+                  <li>• HTML, CSS e Bootstrap para design</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="panel p-4 h-100 reveal delay-2">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <h4 class="mb-0">Habilidades</h4>
+                  <span class="badge-accent rounded-pill px-3 py-1">Entrega</span>
+                </div>
+                <ul class="list-unstyled text-muted mb-0">
+                  <li>• Desenvolvimento web full-stack</li>
+                  <li>• Automação de processos e bots de atendimento</li>
+                  <li>• Integrações com WhatsApp, APIs REST e OpenAI</li>
+                  <li>• CRUDs, dashboards e agendamento de disparos</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="panel p-4 h-100 reveal delay-3">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <h4 class="mb-0">Ferramentas</h4>
+                  <span class="badge-accent rounded-pill px-3 py-1">Workflow</span>
+                </div>
+                <ul class="list-unstyled text-muted mb-0">
+                  <li>• Jira / Trello</li>
+                  <li>• Git / GitHub / Bitbucket</li>
+                  <li>• WhatsApp Business </li>
+                  <li>• OpenAI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <div class="section-title reveal"><span></span> Sobre mim</div>
+              <h3 class="h1 fw-bold mb-3 reveal delay-1">Sobre Leonardo Estigarribia</h3>
+              <p class="text-muted reveal delay-2">Tenho 22 anos e sou programador pleno, estudando Bacharelado em Ciência e Tecnologia e Ciência da Computação na UFABC. Gosto de entender bem o contexto das pessoas, fazer perguntas e testar caminhos diferentes até achar algo que faça sentido de verdade.</p>
+              <p class="text-muted reveal delay-3">No dia a dia, tento ser alguém com quem o time pode contar: colaborativo, atento aos detalhes e aberto a feedback. Valorizo conversas sinceras, rotina organizada e aquela sensação de ver o trabalho pronto ajudando quem está do outro lado.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="panel p-4 about-card reveal delay-1">
+                <div class="about-row">
+                  <div class="badge badge-accent rounded-pill px-3 py-2">Proativo</div>
+                  <div class="text-muted">Gosto de assumir responsabilidade, antecipar problemas e transformar ideia em entrega concreta.</div>
+                </div>
+                <div class="about-row">
+                  <div class="badge badge-accent rounded-pill px-3 py-2">Entusiasta</div>
+                  <div class="text-muted">Sou curioso por tecnologia, vivo testando ferramentas novas e levo para o projeto só o que realmente gera impacto.</div>
+                </div>
+                <div class="about-row">
+                  <div class="badge badge-accent rounded-pill px-3 py-2">Workaholic</div>
+                  <div class="text-muted">Gosto do que faço: estar perto do código, das pessoas e das entregas, vendo as soluções ganharem forma no dia a dia.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="snap-section">
+      <section id="trajetoria" class="py-5">
+        <div class="container">
+          <div class="section-title reveal"><span></span> Trajetória</div>
+          <div class="panel p-4 reveal">
+            <div class="row g-4 mb-4">
+              <div class="col-md-3 d-flex gap-3 align-items-center">
+                <div class="timeline-dot"></div>
+                <div>
+                  <div class="fw-semibold">2021</div>
+                  <div class="text-muted small">Estudos autônomos</div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="mb-1">Início no mundo de tecnologia</h5>
+                <p class="text-muted mb-0">Comecei a estudar tecnologia por conta própria, explorando programação, lógica e desenvolvimento web para entender se era esse o caminho que eu queria seguir.</p>
+              </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row g-4 mb-4">
+              <div class="col-md-3 d-flex gap-3 align-items-center">
+                <div class="timeline-dot"></div>
+                <div>
+                  <div class="fw-semibold">2022</div>
+                  <div class="text-muted small">UFABC</div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="mb-1">Bacharelado em Ciência e Tecnologia</h5>
+                <p class="text-muted mb-0">Entrei no Bacharelado em Ciência e Tecnologia na UFABC, fortalecendo base teórica, matemática e fundamentos de computação.</p>
+              </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row g-4 mb-4">
+              <div class="col-md-3 d-flex gap-3 align-items-center">
+                <div class="timeline-dot"></div>
+                <div>
+                  <div class="fw-semibold">2023</div>
+                  <div class="text-muted small">LeadMob</div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="mb-1">Estagiário em CRM</h5>
+                <p class="text-muted mb-0">Entrei como estagiário na LeadMob, empresa de CRM, tendo meu primeiro contato com rotinas de desenvolvimento, produto e demandas reais de clientes.</p>
+              </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row g-4 mb-4">
+              <div class="col-md-3 d-flex gap-3 align-items-center">
+                <div class="timeline-dot"></div>
+                <div>
+                  <div class="fw-semibold">2024</div>
+                  <div class="text-muted small">LeadMob</div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="mb-1">Programador júnior</h5>
+                <p class="text-muted mb-0">Fui efetivado na LeadMob como programador júnior, passando a atuar de forma mais constante em entregas, correções e melhorias no produto.</p>
+              </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row g-4 mb-4">
+              <div class="col-md-3 d-flex gap-3 align-items-center">
+                <div class="timeline-dot"></div>
+                <div>
+                  <div class="fw-semibold">2025</div>
+                  <div class="text-muted small">UFABC</div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="mb-1">Bacharelado em Ciência da Computação</h5>
+                <p class="text-muted mb-0">Iniciei o Bacharelado em Ciência da Computação na UFABC, conectando mais teoria, arquitetura de software e estruturas de dados ao que já vivia na prática.</p>
+              </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row g-4">
+              <div class="col-md-3 d-flex gap-3 align-items-center">
+                <div class="timeline-dot"></div>
+                <div>
+                  <div class="fw-semibold">2026</div>
+                  <div class="text-muted small">LeadMob</div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <h5 class="mb-1">Programador pleno</h5>
+                <p class="text-muted mb-0">Fui promovido a programador pleno, com mais autonomia para tomar decisões técnicas, apoiar o time e transformar demandas em soluções que geram resultado.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="py-5">
+        <div class="container">
+          <div class="section-title reveal"><span></span> Contato</div>
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <div class="panel p-4 h-100 reveal delay-1">
+                <h4 class="mb-3">Vamos conversar</h4>
+                <p class="text-muted mb-4">Se fez sentido o que você viu aqui e quiser trocar uma ideia sobre projetos ou oportunidades, pode me chamar pelos contatos abaixo.</p>
+                <div class="row g-4 align-items-center">
+                  <div class="col-md-7">
+                    <div class="d-flex flex-column gap-2">
+                      <div>
+                        <div class="text-muted small">Email</div>
+                        <a href="mailto:leonardo.p.e@me.com" class="fw-semibold">leonardo.p.e@me.com</a>
+                      </div>
+                      <div>
+                        <div class="text-muted small">LinkedIn</div>
+                        <a href="https://www.linkedin.com" class="fw-semibold">linkedin.com/in/seu-perfil</a>
+                      </div>
+                      <div>
+                        <div class="text-muted small">Telefone</div>
+                        <span class="fw-semibold">+55 (21) 99031-9999</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5 d-flex justify-content-md-end">
+                    <a
+                      href="https://wa.me/5521990319999?text=Ol%C3%A1%20Leonardo%2C%20vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar%20sobre%20um%20projeto%20%2F%20oportunidade."
+                      class="btn btn-whats fw-bold px-4 d-inline-flex align-items-center gap-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg class="whats-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3zm0 2a7 7 0 0 1 6.07 10.5.75.75 0 0 0-.08.62l.84 2.5-2.54-.8a.75.75 0 0 0-.6.08A7 7 0 1 1 12 5zm-3 3.75c-.17 0-.44.06-.69.3-.26.25-.9.88-.9 2.13 0 1.24.92 2.44 1.05 2.61.13.17 1.8 2.8 4.4 3.8.61.24 1.09.38 1.46.49.61.19 1.16.16 1.6.1.49-.07 1.5-.61 1.71-1.2.21-.6.21-1.11.15-1.22-.06-.11-.24-.18-.51-.32-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.62.14-.19.28-.74.88-.91 1.06-.17.18-.34.2-.62.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.56-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.3.43-.46.14-.15.18-.25.28-.42.09-.18.05-.34-.02-.48-.07-.14-.63-1.53-.86-2.08-.22-.53-.45-.54-.62-.54z"></path>
+                      </svg>
+                      <span>WhatsApp</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="modal fade project-modal" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="me-auto">
+              <h5 class="modal-title mb-1" id="projectModalLabel">Título do Projeto</h5>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-headbar d-flex flex-wrap align-items-center gap-3 mb-3">
+              <div class="d-flex flex-wrap gap-2 modal-project-tags"></div>
+            </div>
+            <div class="modal-hero-wrapper mb-3">
+              <button type="button" class="modal-hero-nav left" id="modalPrev" aria-label="Projeto anterior">‹</button>
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden border border-dark modal-hero">
+                <img src="" alt="Imagem do projeto" class="w-100 h-100 object-fit-cover modal-project-image">
+              </div>
+              <button type="button" class="modal-hero-nav right" id="modalNext" aria-label="Próximo projeto">›</button>
+            </div>
+            <div class="text-muted modal-project-description mb-2">Descrição detalhada do projeto.</div>
+            <div class="modal-project-extra text-muted"></div>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <div class="text-muted small">Substitua este conteúdo pelo real do projeto.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div>
+  <footer class="footer">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3 small">
+      <span class="text-muted">© 2026 · Leonardo Estigarribia · Portfólio</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('a.nav-link, a[href^="#"]').on('click', function (e) {
+        const href = this.getAttribute('href');
+        if (!href || href === '#' || href.length <= 1) return;
+        const target = $(href);
+        if (target.length) {
+          e.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top - 70
+          }, 600);
+        }
+      });
+
+      const sections = $('section');
+      const reveals = $('.reveal');
+
+      function setActiveNav() {
+        const scrollPos = $(window).scrollTop() + 90;
+        sections.each(function () {
+          const top = $(this).offset().top;
+          const bottom = top + $(this).outerHeight();
+          const id = $(this).attr('id');
+          if (scrollPos >= top && scrollPos < bottom) {
+            $('.nav-link').removeClass('active');
+            $('.nav-link[href="#' + id + '"]').addClass('active');
+          }
+        });
+      }
+
+      function animateOnScroll() {
+        const viewTop = $(window).scrollTop();
+        const viewBottom = viewTop + $(window).height() * 0.9;
+        reveals.each(function () {
+          const $el = $(this);
+          if ($el.hasClass('visible')) return;
+          const top = $el.offset().top;
+          const bottom = top + $el.outerHeight();
+          if (bottom >= viewTop && top <= viewBottom) {
+            $el.addClass('visible');
+          }
+        });
+      }
+
+      $(window).on('scroll resize', function () {
+        setActiveNav();
+        animateOnScroll();
+      });
+
+      setActiveNav();
+      animateOnScroll();
+
+      const projectCards = $('.project-card');
+      const modal = $('#projectModal');
+      const modalInstance = bootstrap.Modal.getOrCreateInstance(modal[0]);
+
+      function openProjectModal(card) {
+        const index = projectCards.index(card);
+        const title = card.find('h5').first().text();
+        const desc = card.find('p.text-muted').first().text();
+        const tags = card.find('.tag').map(function () { return $(this).text(); }).get();
+        const imgSrc = card.find('img').first().attr('src');
+        const extra = card.find('.project-extra').html() || '';
+
+        modal.data('projectIndex', index);
+        modal.find('#projectModalLabel').text(title);
+        modal.find('.modal-project-description').text(desc);
+        modal.find('.modal-project-image').attr('src', imgSrc);
+        modal.find('.modal-project-extra').html(extra);
+
+        const tagsContainer = modal.find('.modal-project-tags');
+        tagsContainer.empty();
+        tags.forEach(function (tag) {
+          tagsContainer.append($('<span/>', { 'class': 'tag' }).text(tag));
+        });
+
+        modalInstance.show();
+      }
+
+      $('.project-card').on('click', function (e) {
+        if ($(e.target).closest('a').length) return;
+        openProjectModal($(this));
+      });
+
+      $('.btn-detail').on('click', function (e) {
+        e.preventDefault();
+        openProjectModal($(this).closest('.project-card'));
+      });
+
+      $('#modalPrev').on('click', function () {
+        const currentIndex = Number(modal.data('projectIndex')) || 0;
+        const prevIndex = (currentIndex - 1 + projectCards.length) % projectCards.length;
+        openProjectModal(projectCards.eq(prevIndex));
+      });
+
+      $('#modalNext').on('click', function () {
+        const currentIndex = Number(modal.data('projectIndex')) || 0;
+        const nextIndex = (currentIndex + 1) % projectCards.length;
+        openProjectModal(projectCards.eq(nextIndex));
+      });
+
+      $('#menuToggle').on('click', function () {
+        $('#mainNav').toggleClass('open');
+        $(this).toggleClass('open');
+      });
+
+      $('#mainNav a').on('click', function () {
+        if (window.innerWidth <= 992) {
+          $('#mainNav').removeClass('open');
+          $('#menuToggle').removeClass('open');
+        }
+      });
+
+      const carousel = $('.project-carousel');
+      const controls = carousel.find('.carousel-control-prev, .carousel-control-next');
+      controls.on('mouseenter', function () {
+        carousel.addClass('hovering');
+      }).on('mouseleave', function () {
+        carousel.removeClass('hovering');
+      });
+
+      const lanternMedia = window.matchMedia('(hover: hover) and (pointer: fine)');
+      if (lanternMedia.matches) {
+        const root = document.documentElement;
+        const clamp01 = (n) => Math.min(Math.max(n, 0), 1);
+        let target = { x: 0.5, y: 0.5 };
+        let current = { ...target };
+        let rafId = null;
+        const profilePhoto = document.querySelector('.profile-photo');
+
+        const loop = () => {
+          current.x += (target.x - current.x) * 0.25;
+          current.y += (target.y - current.y) * 0.25;
+          const xPct = current.x * 100;
+          const yPct = current.y * 100;
+          root.style.setProperty('--bg-x1', `${xPct}%`);
+          root.style.setProperty('--bg-y1', `${yPct}%`);
+          root.style.setProperty('--bg-x2', `${xPct}%`);
+          root.style.setProperty('--bg-y2', `${yPct}%`);
+          rafId = requestAnimationFrame(loop);
+        };
+
+        const setTargetFromEvent = (e) => {
+          const doc = document.documentElement;
+          const width = doc.clientWidth || window.innerWidth || 1;
+          const height = doc.scrollHeight || window.innerHeight || 1;
+          if (profilePhoto) {
+            const rect = profilePhoto.getBoundingClientRect();
+            const padding = 48;
+            const inside = e.clientX >= rect.left - padding &&
+              e.clientX <= rect.right + padding &&
+              e.clientY >= rect.top - padding &&
+              e.clientY <= rect.bottom + padding;
+            profilePhoto.classList.toggle('colorized', inside);
+          }
+          target = {
+            x: clamp01(e.clientX / width),
+            y: clamp01((window.scrollY + e.clientY) / height)
+          };
+          if (!rafId) rafId = requestAnimationFrame(loop);
+        };
+
+        $(window).on('pointermove mousemove', setTargetFromEvent);
+
+        $(window).on('pointerleave blur', () => {
+          target = { x: 0.5, y: 0.5 };
+          if (profilePhoto) profilePhoto.classList.remove('colorized');
+          if (!rafId) rafId = requestAnimationFrame(loop);
+        });
+
+        target = { x: 0.5, y: 0.5 };
+        if (!rafId) rafId = requestAnimationFrame(loop);
+      }
+    });
+  </script>
+</body>
+</html>
