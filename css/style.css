@@ -306,7 +306,7 @@ main {
 .btn-contrast {
   border: var(--border-width) solid #0b0c10;
   border-radius: var(--border-radius);
-  background: llinear-gradient(135deg, #f5f6f9, #dcdfe6);
+  background: linear-gradient(135deg, #f5f6f9, #dcdfe6);
   color: #0b0c10;
   transition: transform 0.2s ease,
     background 0.25s ease,
@@ -736,6 +736,13 @@ main {
 
   .modal-headbar {
     padding: 10px 12px;
+  }
+
+  .btn-contrast {
+    background: #f5f6f9;
+    color: #0b0c10;
+    border-color: #0b0c10;
+    transform: none;
   }
 }
 
